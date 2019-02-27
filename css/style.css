@@ -1,0 +1,85 @@
+img {
+  display: grid;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+p {
+  font-size: 40px;
+}
+
+.main {
+  background-color: #dcdde1;
+}
+.news {
+  background-color: #7f8fa6; 
+  
+}
+.contacts {
+  background-color: #2f3542;
+}
+.portfolio {
+  background-color: #353b48; 
+}
+.wrapper {
+  position :relative;
+  overflow-x: hidden;
+}
+.menu {
+  position: fixed;
+  z-index: 99;
+  left: 0; top:0;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  transition: 0.5s;
+  transform: translateX(-100%);
+}
+.menu-active {
+  transform: translateX(0%);
+}
+.menu-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50%;
+  flex-direction: column;
+}
+.menu-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: black;
+  letter-spacing: 3px;
+}
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  position: absolute;
+  right: -35px;
+  top: 10px;
+}
+.content {
+  transition: 0.5s; 
+  position: relative;
+  z-index: 0;
+}
+.content_active {
+  transform: translateX(20%);
+}
+
